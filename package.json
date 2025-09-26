@@ -7,7 +7,9 @@
     "pnpm": ">=10.16.1"
   },
   "packageManager": "pnpm@10.16.1",
-  "scripts": {
+  "scripts": { "build": "NODE_ENV=production pnpm --reporter ndjson run build:real",
+  "build:real": "your-original-build-command"
+}
     "prepare": "node scripts/prepare.mjs",
     "preinstall": "node scripts/block-npm-install.js",
     "build": "turbo run build",
